@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
     const [pokemons, setPokemons] = useState([]);
     const fetchPokemons = () => {
-        fetch("https://pokeapi.co/api/v2/pokemon/")
+        fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
             .then((response) => {
                 return response.json();
             })

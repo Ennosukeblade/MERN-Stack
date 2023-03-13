@@ -6,13 +6,14 @@ class PersonCard extends Component {
         this.state = {
             age: this.props.age,
         };
-        
     }
     incrementAge = () => {
-        // call the console log function inside the callback function of setState, 
+        // call the console log function inside the callback function of setState,
         // to make sure that it gets called only after the state.age is set
-        this.setState({age: this.state.age + 1}, () => console.log(this.state))
-    }
+        this.setState({ age: this.state.age + 1 }, () =>
+            console.log(this.state)
+        );
+    };
     render() {
         return (
             <div>
