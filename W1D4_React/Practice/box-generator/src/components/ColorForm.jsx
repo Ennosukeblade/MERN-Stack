@@ -21,6 +21,7 @@ const ColorForm = (props) => {
                     type="color"
                     id="color"
                     onChange={(e) => setColor(e.target.value)}
+                    // value accept only hexadecimal
                     value={color}
                 />
                 {/* <label htmlFor="height">H</label>
