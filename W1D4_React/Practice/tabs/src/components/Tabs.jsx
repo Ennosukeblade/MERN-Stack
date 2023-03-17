@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Tabs = (props) => {
-    const [currentTab, setCurrentTab] = useState(1);
+    //const [currentTab, setCurrentTab] = useState(1);
 
     const tabsArray = (value) => {
         const arr = [];
@@ -14,9 +14,10 @@ const Tabs = (props) => {
         <button
             key={i}
             onClick={() => {
-                setCurrentTab(num);
+                //setCurrentTab(num);
                 console.log(num);
-                props.tabContent(currentTab);
+                //props.tabContent(currentTab);
+                props.tabContent(num);
             }}
         >
             Tab{num}
