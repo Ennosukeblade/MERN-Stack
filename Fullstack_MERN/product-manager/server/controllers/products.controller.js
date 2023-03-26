@@ -17,6 +17,15 @@ module.exports = {
                 res.json(newProduct)
             })
             .catch(err => res.json(err))
+    },
+    // Get product by id
+    findOne: (req, res) => {
+        Product.findOne({ _id: req.params.id })
+            .then(product => {
+                console.log("Product found by id!");
+                res.json(product)
+            })
+            .catch(err => res.json(err))
     }
 
 }
